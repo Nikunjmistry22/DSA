@@ -1,0 +1,4 @@
+gfg compiler
+3.2 : reverse a link list
+3.3 : detect a loop in link list
+3.4 : nth node from end 

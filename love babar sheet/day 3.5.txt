@@ -1,0 +1,17 @@
+Not optimal
+To add 1 to the number which is in the form of link list.
+
+code
+curr=self.head
+        slow=self.head
+        count=0
+        sum=0
+        while(curr):
+            curr=curr.next
+            count+=1
+        n=count
+        while(slow):
+            sum+=slow.data*pow(10,n-1)
+            n-=1
+            slow=slow.next
+        return sum+1
