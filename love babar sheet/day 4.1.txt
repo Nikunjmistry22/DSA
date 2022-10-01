@@ -1,0 +1,22 @@
+reverse in kth group size 
+def reverse(self,head, k):
+        # Code here
+        prev=None
+        next=None
+        curr=head
+        count=0
+        #base case
+        if head==None:
+            return None
+        #first size reverse
+        while(curr and count<k):
+            next=curr.next
+            curr.next=prev
+            prev=curr
+            curr=next
+            count+=1
+        
+        #recursive call
+        if next!=None:
+            head.next=self.reverse(next,k)
+        return prev    
