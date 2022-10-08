@@ -1,14 +1,16 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-typedef long long int ll;
 int main()
 {
-    ll t_c;cin>>t_c;
-    while(t_c--){
-        ll n,m;
-        cin>>n>>m;
-
+    string s="nikunj";
+    stack<char>a;
+    string ans="";
+    for(int i=0;i<s.length();i++){
+        a.push(s[i]);
     }
-
-    return 0;
+    while(a.empty()==0){
+        ans+=a.top();
+        a.pop();
+    }
+    cout<<ans;
 }
